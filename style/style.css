@@ -1,0 +1,46 @@
+:root {
+	--first_color: rgba(85, 2, 217, 1);
+	--second_color: rgba(1, 52, 106, 1);
+	--third_color: rgba(168, 0, 0, 1);
+	--white: rgba(255, 255, 255, 1);
+	--black: rgba(0, 0, 0, 1);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.principal_header {
+	position: relative;
+	text-align: justify;
+	background-color: var(--first_color);
+	height: 15vh;
+	color: var(--white);
+}
+
+.principal_header img {
+	position: absolute;
+	width: 10vh;
+	right: 0%;
+	bottom: 0;
+}
+aside {
+	display: none;
+}
+.principal_nav {
+	background-color: var(--third_color);
+	overflow: hidden;
+}
+.principal_nav tr li {
+	list-style: none;
+}
+.foto {
+	width: 200px;
+}
+.contenedor_fotos_viaje: first-child {
+	background-color: red;
+}
+img {
+	width: 200px;
+}
