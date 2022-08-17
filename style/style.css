@@ -1,8 +1,8 @@
 :root {
-	--first_color: rgba(85, 2, 217, 1);
-	--second_color: rgba(1, 52, 106, 1);
-	--third_color: rgba(168, 0, 0, 1);
-	--white: rgba(255, 255, 255, 1);
+	--first_color: #243a73;
+	--second_color: #a5becc;
+	--third_color: #7c3e66;
+	--white: #f2ebe9;
 	--black: rgba(0, 0, 0, 1);
 }
 
@@ -11,35 +11,145 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body {
+	max-width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+aside {
+	display: none;
+}
+
+section {
+	background-color: var(--second_color);
+	padding: 5%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+a {
+	text-decoration: none;
+	color: var(--third_color);
+}
+h1 {
+	text-align: center;
+	color: var(--third_color);
+}
+h2,
+h3 {
+	background-color: var(--first_color);
+	text-align: center;
+}
+p {
+	text-align: justify;
+}
 .principal_header {
 	position: relative;
-	text-align: justify;
+	display: flex;
+	justify-content: end;
 	background-color: var(--first_color);
-	height: 15vh;
-	color: var(--white);
+	height: 20vh;
+	color: var(--third_color);
 }
 
 .principal_header img {
 	position: absolute;
-	width: 10vh;
-	right: 0%;
-	bottom: 0;
-}
-aside {
-	display: none;
+	width: 30vh;
+	left: 0%;
+	top: 4vh;
+	border-radius: 50%;
 }
 .principal_nav {
-	background-color: var(--third_color);
+	background-color: var(--secon_color);
 	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+	margin-left: 25vw;
 }
 .principal_nav tr li {
 	list-style: none;
 }
 .foto {
-	width: 200px;
+	display: inline-block;
+	width: 20vw;
+	height: 15vw;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
-.contenedor_fotos_viaje: first-child {
+
+.contenedor_fotos_viaje {
+	width: 65vw;
+	height: 20vw;
+	overflow: scroll;
+	display: inline-block;
+}
+
+.contenedor_fotos_viaje div:nth-child(1) {
+	background-image: url(../img/viaje1.jpg);
+}
+.contenedor_fotos_viaje div:nth-child(2) {
+	background-image: url(../img/viaje2.jpg);
+}
+.contenedor_fotos_viaje div:nth-child(3) {
+	background-image: url(../img/viaje3.jpg);
+}
+.contenedor_fotos_viaje div:nth-child(4) {
+	background-image: url(../img/viaje4.jpg);
+}
+.contenedor_fotos_viaje div:nth-child(5) {
+	background-image: url(../img/viaje5.jpg);
+}
+.contenedor_fotos_viaje div:nth-child(6) {
+	background-image: url(../img/viaje6.jpg);
+}
+.contenedor_fotos_viaje div:nth-child(7) {
+	background-image: url(../img/viaje7.jpg);
+}
+.contenedor_fotos_viaje div:nth-child(8) {
+	background-image: url(../img/viaje8.jpg);
+}
+.contenedor_fotos_viaje div:nth-child(9) {
+	background-image: url(../img/viaje9.jpg);
+}
+.contenedor_fotos_fotografia {
+	width: 65vw;
+	height: 20vw;
+	overflow: scroll;
+	margin-right: auto;
+}
+
+.contenedor_fotos_fotografia div:nth-child(1) {
 	background-color: red;
+}
+.contenedor_fotos_fotografia div:nth-child(2) {
+	background-color: yellow;
+}
+.contenedor_fotos_fotografia div:nth-child(3) {
+	display: inline-block;
+
+	background-color: green;
+}
+.contenedor_fotos_fotografia div:nth-child(4) {
+	background-color: grey;
+}
+.contenedor_fotos_fotografia div:nth-child(5) {
+	background-color: orangered;
+}
+.contenedor_fotos_viaje div:nth-child(6) {
+	background-color: blue;
+}
+.contenedor_fotos_fotografia div:nth-child(7) {
+	background-color: black;
+}
+.contenedor_fotos_fotografia div:nth-child(8) {
+	background-color: purple;
+}
+.contenedor_fotos_fotografia div:nth-child(9) {
+	background-color: orangered;
 }
 img {
 	width: 200px;
