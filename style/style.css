@@ -5,11 +5,14 @@
 	--white: #f2ebe9;
 	--black: rgba(0, 0, 0, 1);
 }
-
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap");
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+html {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
 	max-width: 1000px;
@@ -18,13 +21,22 @@ body {
 	display: flex;
 	flex-direction: column;
 }
-
-aside {
-	display: none;
+head {
+	display: flex;
+	flex-direction: column;
 }
 
+aside {
+	height: 35px;
+	overflow: hidden;
+	transition: height 1.5s;
+}
+aside:hover {
+	height: 60vh;
+	overflow: scroll;
+}
 section {
-	background-color: var(--second_color);
+	background-color: var();
 	padding: 5%;
 	height: 100%;
 	display: flex;
@@ -33,15 +45,20 @@ section {
 }
 a {
 	text-decoration: none;
-	color: var(--third_color);
+	color: var(--white);
 }
 h1 {
-	text-align: center;
-	color: var(--third_color);
+	text-align: left;
+	color: var(--black);
 }
+h2 span {
+	color: var(--white);
+	font-family: "Rajdhani", sans-serif;
+	font-size: 4rem;
+}
+
 h2,
 h3 {
-	background-color: var(--first_color);
 	text-align: center;
 }
 p {
@@ -50,29 +67,34 @@ p {
 .principal_header {
 	position: relative;
 	display: flex;
-	justify-content: end;
-	background-color: var(--first_color);
-	height: 20vh;
+	justify-content: center;
+	align-items: center;
+
+	background: linear-gradient(
+		142deg,
+		rgba(36, 58, 115, 1) 31%,
+		rgba(242, 235, 233, 1) 90%
+	);
+	height: 18vh;
 	color: var(--third_color);
 }
 
 .principal_header img {
 	position: absolute;
-	width: 30vh;
-	left: 0%;
-	top: 4vh;
+	width: 32vh;
+	left: 2%;
+	top: 3vh;
 	border-radius: 50%;
 }
 .principal_nav {
-	background-color: var(--secon_color);
+	background-color: var(--black);
+	height: 5vh;
 	overflow: hidden;
 	display: flex;
 	justify-content: space-around;
-	margin-left: 25vw;
+	align-items: center;
 }
-.principal_nav tr li {
-	list-style: none;
-}
+
 .foto {
 	display: inline-block;
 	width: 20vw;
