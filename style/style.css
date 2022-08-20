@@ -68,12 +68,17 @@ p {
 	text-align: justify;
 	opacity: 0.5;
 }
+.datos_personales ul li th {
+	font-size: 3rem;
+}
 footer {
+	display: flex;
 	position: sticky;
 	bottom: 0;
 	height: 20px;
-	background-color: #7c3e66;
+	background-color: black;
 	color: var(--white);
+	justify-content: center;
 }
 .principal_header {
 	position: relative;
