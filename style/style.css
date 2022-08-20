@@ -29,11 +29,10 @@ head {
 aside {
 	height: 35px;
 	overflow: hidden;
-	transition: height 1.5s;
+	transition: 1.5s;
 }
 aside:hover {
-	height: 60vh;
-	overflow: scroll;
+	height: 65vh;
 }
 section {
 	background-color: var();
@@ -51,7 +50,7 @@ h1 {
 	text-align: left;
 	color: var(--black);
 }
-h2 span {
+h1 span {
 	color: var(--white);
 	font-family: "Rajdhani", sans-serif;
 	font-size: 4rem;
@@ -62,7 +61,19 @@ h3 {
 	text-align: center;
 }
 p {
+	background-color: var(--second_color);
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 1rem;
 	text-align: justify;
+	opacity: 0.5;
+}
+footer {
+	position: sticky;
+	bottom: 0;
+	height: 20px;
+	background-color: #7c3e66;
+	color: var(--white);
 }
 .principal_header {
 	position: relative;
