@@ -5,190 +5,199 @@
 	--white: #f2ebe9;
 	--black: rgba(0, 0, 0, 1);
 }
-@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap");
+/* -----RESETEO DE ESTILOS------ */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-html {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-body {
-	max-width: 1200px;
-	margin-right: auto;
-	margin-left: auto;
-	display: flex;
-	flex-direction: column;
-}
-head {
-	display: flex;
-	flex-direction: column;
-}
-
-aside {
-	height: 35px;
-	overflow: hidden;
-	transition: 1.5s;
-}
-aside:hover {
-	height: 65vh;
-}
-section {
-	background-color: var();
-	padding: 5%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-}
 a {
 	text-decoration: none;
-	color: var(--white);
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
 }
-h1 {
-	text-align: left;
-	color: var(--black);
-}
-h1 span {
-	color: var(--white);
-	font-family: "Rajdhani", sans-serif;
-	font-size: 4rem;
+/* -----RESETEO DE ESTILOS------ */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-h2,
-h3 {
-	text-align: center;
+body {
 }
+ul {
+	list-style: none;
+}
+/* ----------------ESTILOS GLOBALES------------------------------ */
+html {
+	font-family: Tahoma, sans-serif;
+}
+
 p {
-	background-color: var(--second_color);
-	padding: 1rem;
-	margin: 1rem;
-	border-radius: 1rem;
 	text-align: justify;
-	opacity: 0.5;
 }
-.datos_personales ul li th {
-	font-size: 3rem;
+p span {
+	font-weight: 800;
 }
-footer {
-	display: flex;
-	position: sticky;
-	bottom: 0;
-	height: 20px;
-	background-color: black;
-	color: var(--white);
-	justify-content: center;
-}
-.principal_header {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 
+/* -----Baara de navegación------- */
+.nav {
+	position: sticky;
+	top: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: black;
+	align-items: center;
+	height: 30px;
+}
+.nav-boton {
+	color: var(--white);
+}
+.nav-boton:hover {
+	text-shadow: 0 0 5px #f2ebe9;
+	transform: scale(1.02);
+}
+/* --------Header --------*/
+.header {
+	display: flex;
+	height: 12vh;
 	background: linear-gradient(
-		142deg,
-		rgba(36, 58, 115, 1) 31%,
+		117deg,
+		rgba(36, 58, 115, 1) 30%,
 		rgba(242, 235, 233, 1) 90%
 	);
-	height: 18vh;
-	color: var(--third_color);
-}
-
-.principal_header img {
-	position: absolute;
-	width: 32vh;
-	left: 2%;
-	top: 3vh;
-	border-radius: 50%;
-}
-.principal_nav {
-	background-color: var(--black);
-	height: 5vh;
-	overflow: hidden;
-	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 }
 
-.foto {
-	display: inline-block;
-	width: 20vw;
-	height: 15vw;
-	background-size: contain;
-	background-repeat: no-repeat;
+.header h1 span {
+	font-family: "Rajdhani", sans-serif;
+	font-size: 5rem;
+	color: var(--white);
+}
+/*-----------Datos Personales-----------  */
+.datos_personales {
+	position: sticky;
+	top: 30px;
+	height: 40px;
+	overflow: hidden;
+	background-color: var(--white);
 }
 
-.contenedor_fotos_viaje {
-	width: 65vw;
-	height: 20vw;
+.datos_personales-title {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 2%;
+	height: 40px;
+}
+.datos_personales-title svg {
+}
+
+.datos_personales_body {
+	display: flex;
+	flex-direction: column;
+}
+
+.datos_personales_img {
+	margin: 15%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	height: 1%;
+	border-radius: 50%;
+}
+
+.datos_personales-item {
+	padding: 10px;
+	text-align: justify;
+}
+
+.datos_personales-item strong {
+	font-size: 1rem;
+	text-decoration: underline;
+}
+.datos_personales_show {
+	height: fit-content;
+}
+/* --------------CONTENIDO PRiNCIPAL -------------- */
+
+/* ------------HACERCA DE MI------------- */
+
+.main {
+	padding: 10px;
+}
+.main_presentation {
+	padding: 15px;
+	height: 35vh;
 	overflow: scroll;
-	display: inline-block;
+	text-align: center;
+	font-size: large;
+}
+.main_presentation-text {
+	padding: 5%;
+	text-align: justify;
+	font-weight: 400;
+}
+/* -------Skills---------- */
+.skills_content {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+.skills_content_soft {
+	display: flex;
+	flex-direction: column;
+}
+.skills_content_soft h3 {
+	font-size: 2rem;
+	align-self: center;
+	margin: 10px;
+}
+.skills_content-skill {
+	display: flex;
+	border: solid black 4px;
+	border-radius: 1rem;
+	padding: 5px;
+	max-width: 500px;
+	margin-bottom: 15px;
+}
+.skills_content-skill p {
+	padding: 2%;
+}
+.skills_content-skill img {
+	width: 35%;
+	align-self: center;
+}
+.skills_content_hard {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.skills_content_hard h3 {
+	display: flex;
+	font-size: 2rem;
+	justify-content: center;
+	margin: 10px;
+	width: 100%;
+}
+.skills_content_hard h4 {
+	margin-top: 15px;
+}
+.skills_content_hard .skills_content-skill {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 45%;
+	height: 20vh;
+}
+.skills_content-skill svg {
+	transform: scale(3);
+	fill: var(--first_color);
 }
 
-.contenedor_fotos_viaje div:nth-child(1) {
-	background-image: url(../img/viaje1.jpg);
-}
-.contenedor_fotos_viaje div:nth-child(2) {
-	background-image: url(../img/viaje2.jpg);
-}
-.contenedor_fotos_viaje div:nth-child(3) {
-	background-image: url(../img/viaje3.jpg);
-}
-.contenedor_fotos_viaje div:nth-child(4) {
-	background-image: url(../img/viaje4.jpg);
-}
-.contenedor_fotos_viaje div:nth-child(5) {
-	background-image: url(../img/viaje5.jpg);
-}
-.contenedor_fotos_viaje div:nth-child(6) {
-	background-image: url(../img/viaje6.jpg);
-}
-.contenedor_fotos_viaje div:nth-child(7) {
-	background-image: url(../img/viaje7.jpg);
-}
-.contenedor_fotos_viaje div:nth-child(8) {
-	background-image: url(../img/viaje8.jpg);
-}
-.contenedor_fotos_viaje div:nth-child(9) {
-	background-image: url(../img/viaje9.jpg);
-}
-.contenedor_fotos_fotografia {
-	width: 65vw;
-	height: 20vw;
-	overflow: scroll;
-	margin-right: auto;
-}
-
-.contenedor_fotos_fotografia div:nth-child(1) {
-	background-color: red;
-}
-.contenedor_fotos_fotografia div:nth-child(2) {
-	background-color: yellow;
-}
-.contenedor_fotos_fotografia div:nth-child(3) {
-	display: inline-block;
-
-	background-color: green;
-}
-.contenedor_fotos_fotografia div:nth-child(4) {
-	background-color: grey;
-}
-.contenedor_fotos_fotografia div:nth-child(5) {
-	background-color: orangered;
-}
-.contenedor_fotos_viaje div:nth-child(6) {
-	background-color: blue;
-}
-.contenedor_fotos_fotografia div:nth-child(7) {
-	background-color: black;
-}
-.contenedor_fotos_fotografia div:nth-child(8) {
-	background-color: purple;
-}
-.contenedor_fotos_fotografia div:nth-child(9) {
-	background-color: orangered;
-}
-img {
-	width: 200px;
-}
+/* ----------ANIMACIONES------------- */
