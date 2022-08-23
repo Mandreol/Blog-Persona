@@ -148,56 +148,79 @@ p span {
 	display: flex;
 	flex-direction: column;
 }
-.skills_content_soft {
-	display: flex;
-	flex-direction: column;
-}
-.skills_content_soft h3 {
-	font-size: 2rem;
-	align-self: center;
-	margin: 10px;
-}
 .skills_content-skill {
 	display: flex;
-	border: solid black 4px;
-	border-radius: 1rem;
-	padding: 5px;
-	max-width: 500px;
-	margin-bottom: 15px;
-}
-.skills_content-skill p {
-	padding: 2%;
-}
-.skills_content-skill img {
-	width: 35%;
-	align-self: center;
-}
-.skills_content_hard {
-	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 }
-.skills_content_hard h3 {
+
+.skills_content-skill p {
+	font-size: 1rem;
+	padding: 4%;
+}
+.skills_content_soft h3,
+.skills_content_hard h3,
+.skills_content_learn h3 {
 	display: flex;
 	font-size: 2rem;
 	justify-content: center;
 	margin: 10px;
 	width: 100%;
 }
-.skills_content_hard h4 {
-	margin-top: 15px;
+.skills_content-skill svg {
+	fill: var(--first_color);
+	width: 100%;
 }
+.skills_content-skill svg path {
+	transform: scale(2);
+}
+.skills_content_hard .skills_content-skill p,
+.skills_content_learn .skills_content-skill p {
+	font-weight: 600;
+}
+
+/* --------Soft Skills --------*/
+.skills_content_soft {
+	display: flex;
+	flex-direction: column;
+}
+
+.skills_content-skill img {
+	width: 35%;
+	align-self: center;
+}
+/* ---------Hard Skills --------*/
+.skills_content_hard {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .skills_content_hard .skills_content-skill {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 45%;
-	height: 20vh;
-}
-.skills_content-skill svg {
-	transform: scale(3);
-	fill: var(--first_color);
+	width: 33%;
+	height: 15vh;
+	margin-bottom: 0;
 }
 
+/* ------------------learn----------- */
+.skills_content_learn {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.skills_content_learn .skills_content-skill {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 33%;
+	height: 15vh;
+	margin-bottom: 0;
+}
+/* ---------Formulario----------------- */
+.contact_form {
+}
 /* ----------ANIMACIONES------------- */
