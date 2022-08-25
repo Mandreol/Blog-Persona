@@ -65,11 +65,14 @@ p span {
 /*-----------Datos Personales-----------  */
 .datos_personales {
 	position: fixed;
-	top: 117px;
-	height: 40px;
+	top: 105px;
+	height: 60px;
 	overflow: hidden;
 	background-color: white;
 	z-index: 100;
+	padding: 20px;
+	transition: all 1s;
+	width: 100%;
 }
 
 .datos_personales-title {
@@ -85,15 +88,11 @@ p span {
 }
 
 .datos_personales_img {
-	margin: 15%;
-	margin-top: 5%;
-	margin-bottom: 5%;
-	height: 1%;
+	width: 200px;
 	border-radius: 50%;
 }
 
-.datos_personales-item {
-	padding: 10px;
+.datos_personales p {
 	text-align: justify;
 }
 
@@ -103,13 +102,15 @@ p span {
 }
 .datos_personales_show {
 	height: 100%;
+	position: relative;
+	overflow: visible;
 }
 /* --------------CONTENIDO PRiNCIPAL -------------- */
 
 /* ------------HACERCA DE MI------------- */
 
 .main {
-	margin-top: 150px;
+	margin-top: 170px;
 	padding: 10px;
 }
 .main_presentation {
@@ -120,6 +121,11 @@ p span {
 	font-size: 1rem;
 	box-shadow: -14px -5px 136px 7px rgba(0, 0, 0, 0.75);
 	border-radius: 1em;
+}
+.main_presentation::-webkit-scrollbar {
+	width: 8px; /* Tamaño del scroll en vertical */
+	height: 8px; /* Tamaño del scroll en horizontal */
+	display: none; /* Ocultar scroll */
 }
 .main_presentation-text {
 	padding: 10px;
@@ -138,6 +144,7 @@ p span {
 	display: flex;
 	font-size: 2rem;
 	justify-content: center;
+	margin-top: 40px;
 	margin-bottom: 40px;
 	width: 100%;
 }
@@ -170,7 +177,7 @@ p span {
 	padding: 10px;
 }
 .skills_content-skill--soft p {
-	max-width: 200px;
+	max-width: 80%;
 	align-self: center;
 }
 /* ---------Hard Skills --------*/
@@ -183,13 +190,14 @@ p span {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-width: 200px;
+	max-width: 100px;
 	width: 25vw;
 	height: 15vh;
 }
-.skills_content-skill--hard img {
-	width: 8vw;
+.skills_content-skill--hard--img {
+	width: 6vw;
 	max-width: 100px;
+	min-width: 50px;
 	z-index: 90;
 }
 .skills_content-skill--hard p {
@@ -197,23 +205,21 @@ p span {
 }
 .skills_content-skill-raiting {
 	position: absolute;
-	height: 13vw;
-	width: 16vw;
+	height: 91px;
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
 	opacity: 0;
-	background-color: #243a73;
-	transition: all 1.5s;
-	clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+	transition: all 1s;
+	z-index: 200;
 }
+
 .skills_content-skill-raiting:hover {
 	opacity: 1;
 }
 
 .skills_content-skill-raiting img {
-	height: 10px;
-	width: 10px;
+	width: 20px;
 }
 
 /* ------------------learn----------- */
@@ -225,23 +231,26 @@ p span {
 .skills_content-skill--learn {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	width: 43%;
+	width: 23%;
 	height: 15vh;
 	margin-bottom: 0;
 }
 .skills_content-skill--learn img {
-	height: 80px;
+	height: 60px;
 }
-.skills_content-skill--learn p {
-}
-
 /* ---------Formulario----------------- */
 .contact {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 4px;
+	padding-bottom: 60px;
+}
+.contact_form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 /* ----------Footer------------- */
 footer {
@@ -252,6 +261,7 @@ footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+	z-index: 1000;
 }
 footer p {
 	text-align: center;
